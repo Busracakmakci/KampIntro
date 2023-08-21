@@ -25,5 +25,16 @@ namespace GenericsIntro
             items[items.length - 1] = item;
 
         }
+        public int Length    //eleman sayısını verir
+        {
+            get { return items.Length;  }
+        }
+
+        public T[] length
+        {
+            get { return items; }
+        }
+
+        public IEnumerable<object> Items { get; internal set; }
     }
 }
