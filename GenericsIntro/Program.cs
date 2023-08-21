@@ -1,19 +1,31 @@
 ﻿
 using GenericsIntro;
+using Microsoft.VisualBasic;
 using System;
 namespace MyNamespace
 {
     class Program
     {
-        static void Main(string[] args) {
+        static void Main(string[] args)
+        {
 
             MyList<string> isimler = new MyList<string>();
             isimler.Add("Engin");
 
-            List<string> liste = new List<string>();
-            Console.WriteLine(liste.Count);
+            Console.WriteLine(isimler.Length);
+            isimler.Add("Kerem");
 
-            Console.WriteLine("");
+            Console.WriteLine(isimler.Length);
+
+            foreach (var item in isimler.Items)
+            {
+                Console.WriteLine(item);
+            }
         }
+
+     
+
+          
+        
     }
 }
