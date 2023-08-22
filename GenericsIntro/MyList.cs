@@ -17,12 +17,12 @@ namespace GenericsIntro
 
         public void Add(T item) {
             T[] tempArray = items;      //geçici dizi oluştur.
-            items = new T[items.length+1]; //sürekli newledikçe referans değişir. Elemanlar uçmasın diye geçici oluşturduk.
-            for (int i = 0; i < tempArray.length; i++)   //geçici dizi oluştuğunda her yeni oluşan diziye ekler.
+            items = new T[items.Length + 1]; //sürekli newledikçe referans değişir. Elemanlar uçmasın diye geçici oluşturduk.
+            for (int i = 0; i < tempArray.Length; i++)   //geçici dizi oluştuğunda her yeni oluşan diziye ekler.
             {
                 items[i] = tempArray[i];
             }
-            items[items.length - 1] = item;
+            items[items.Length - 1] = item;
 
         }
         public int Length    //eleman sayısını verir
@@ -30,7 +30,7 @@ namespace GenericsIntro
             get { return items.Length;  }
         }
 
-        public T[] length
+        public T[] Length1
         {
             get { return items; }
         }
