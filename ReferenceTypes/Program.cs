@@ -12,6 +12,8 @@
             sayi2 = 100;
 
             Console.WriteLine("SAyı1 :" + sayi1);
+
+            //array, class, interface.. reference type
             int[] sayilar1 = new int[] { 1, 2, 3 };
             int[] sayilar2 = new int[] { 10, 20, 30 };
 

@@ -23,8 +23,6 @@
             FirstName = firstName;
             lastName = lastName;
             City = city;
-
-
         } 
         public int Id { get; set; }
         public string FirstName { get; set; }

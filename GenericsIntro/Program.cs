@@ -11,9 +11,11 @@ namespace MyNamespace
 
             MyList<string> isimler = new MyList<string>();
             isimler.Add("Engin");
+            isimler.Add("Busra");
+            isimler.Add("Busra");
 
             Console.WriteLine(isimler.Length);
-            isimler.Add("Kerem");
+           
 
             Console.WriteLine(isimler.Length);
 
